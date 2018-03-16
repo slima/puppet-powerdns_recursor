@@ -59,7 +59,6 @@ class powerdns_recursor::config {
   } ->
 
   concat { "${config_path}/recursor.conf":
-    ensure => present,
     path   => "${config_path}/recursor.conf",
     owner  => $config_owner,
     group  => $config_group,
